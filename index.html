@@ -12,13 +12,17 @@
             padding: 20px; 
             background: url('https://i.pinimg.com/736x/1d/10/3e/1d103ef195e4ac46004bf086fd79f96f.jpg') no-repeat center center fixed; 
             background-size: cover;
+            background-attachment: fixed;
             color: white;
+            height: 100vh; /* Ensures full-page height */
+            display: flex;
+            align-items: center; /* Centers the content vertically */
+            justify-content: center; /* Centers content horizontally */
         }
         
         /* Content Container */
         .container {
             max-width: 700px;
-            margin: 50px auto;
             padding: 30px;
             background: rgba(0, 0, 0, 0.75); /* Semi-transparent black for readability */
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
