@@ -10,7 +10,7 @@
             font-family: Arial, sans-serif; 
             text-align: center; 
             padding: 20px; 
-            background: url('https://source.unsplash.com/1600x900/?portuguese,beach') no-repeat center center fixed; 
+            background: url('https://whereintheworldisnina.com/wp-content/uploads/2018/01/Carvoeiro-algarve-beach.jpg') no-repeat center center fixed; 
             background-size: cover;
             color: white;
         }
@@ -20,7 +20,7 @@
             max-width: 700px;
             margin: 50px auto;
             padding: 30px;
-            background: rgba(0, 0, 0, 0.7); /* Semi-transparent black for readability */
+            background: rgba(0, 0, 0, 0.75); /* Semi-transparent black for readability */
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
             border-radius: 10px;
         }
@@ -32,6 +32,14 @@
         li { margin: 10px 0; }
         .highlight { font-weight: bold; color: #ffcc00; }
         .contact-links a { margin: 0 10px; font-size: 18px; }
+
+        /* Improve text contrast on mobile */
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+                padding: 20px;
+            }
+        }
     </style>
 </head>
 <body>
