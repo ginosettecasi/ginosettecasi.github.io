@@ -10,14 +10,10 @@
             font-family: Arial, sans-serif; 
             text-align: center; 
             padding: 20px; 
-            background: url('https://images.wallpaperscraft.com/image/single/portugal_madeira_island_63190_1920x1080.jpg') no-repeat center center fixed; 
+            background: url('https://i.pinimg.com/736x/1d/10/3e/1d103ef195e4ac46004bf086fd79f96f.jpg') no-repeat center center fixed; 
             background-size: cover;
             background-attachment: fixed;
             color: white;
-            height: 100vh; /* Ensures full-page height */
-            display: flex;
-            align-items: center; /* Centers the content vertically */
-            justify-content: center; /* Centers content horizontally */
         }
         
         /* Content Container */
@@ -28,18 +24,56 @@
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
             border-radius: 10px;
             text-align: left;
+            margin: auto;
         }
 
-        h1 { color: #ffcc00; text-align: center; }
-        h2 { color: #f4f4f4; text-align: center; }
+        h1, h2 { text-align: center; }
         a { text-decoration: none; color: #ffcc00; font-weight: bold; }
-        ul { padding-left: 20px; } /* Fixes bullet point alignment */
+        ul { padding-left: 20px; }
         li { margin: 10px 0; }
         .highlight { font-weight: bold; color: #ffcc00; }
         .contact-links { text-align: center; }
         .contact-links a { margin: 0 10px; font-size: 18px; }
 
-        /* Improve text contrast on mobile */
+        /* Featured Projects Section */
+        .projects {
+            margin-top: 30px;
+        }
+        
+        .project-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+        }
+
+        .project-card h3 {
+            color: #ffcc00;
+            margin-bottom: 10px;
+        }
+
+        .project-card p {
+            margin-bottom: 15px;
+        }
+
+        .project-card a {
+            display: inline-block;
+            background: #ffcc00;
+            color: black;
+            padding: 8px 15px;
+            border-radius: 5px;
+            font-weight: bold;
+            text-decoration: none;
+            margin: 5px;
+        }
+
+        .project-card a:hover {
+            background: #ffd633;
+        }
+        
+        /* Responsive Design */
         @media (max-width: 768px) {
             .container {
                 width: 90%;
@@ -67,15 +101,6 @@
             <li><strong>Application Security & Threat Detection:</strong> Secure coding, SAST/DAST, Threat Modeling</li>
         </ul>
 
-        <h3>🏆 Key Achievements</h3>
-        <ul>
-            <li>✅ Led audits for <span class="highlight">FedRAMP, PCI DSS, ISO 27001, and SOC 2/3</span>, ensuring compliance at enterprise scale.</li>
-            <li>✅ Automated vulnerability triaging using <strong>Python & Jenkins</strong>, cutting remediation time by <strong>30%</strong>.</li>
-            <li>✅ Developed <strong>Infrastructure as Code (IaC)</strong> solutions using <strong>Terraform & Ansible</strong> to enforce security configurations.</li>
-            <li>✅ Integrated <strong>SAST/DAST security tools</strong> (Snyk, Qualys) into <strong>CI/CD pipelines</strong> to automate security testing.</li>
-            <li>✅ Deployed <strong>MITRE ATT&CK-aligned detection models</strong>, reducing false positives by <strong>70%</strong>.</li>
-        </ul>
-
         <h3>📄 Certifications</h3>
         <ul>
             <li>📌 AWS Certified Cloud Practitioner</li>
@@ -83,6 +108,23 @@
             <li>📌 GIAC Certified Incident Handler (GCIH)</li>
             <li>📌 CompTIA Security+ | Network+</li>
         </ul>
+
+        <!-- 🎯 Featured Projects Section -->
+        <div class="projects">
+            <h2>🚀 Featured Projects</h2>
+
+            <!-- AWS Compliance Dashboard Project -->
+            <div class="project-card">
+                <h3>🔍 AWS Compliance Dashboard</h3>
+                <p>
+                    A fully automated dashboard that fetches AWS Security Hub findings and displays real-time compliance reports.
+                </p>
+                <a href="https://ginosettecasi.github.io/aws-compliance-dashboard/" target="_blank">View Live Dashboard</a>
+                <a href="https://github.com/ginosettecasi/aws-compliance-dashboard" target="_blank">GitHub Repo</a>
+            </div>
+
+            <!-- Add More Projects Here -->
+        </div>
 
         <h3>📫 Connect with Me</h3>
         <p class="contact-links">
