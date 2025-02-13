@@ -72,23 +72,6 @@
         .project-card a:hover {
             background: #ffd633;
         }
-        
-        /* Next Project Button */
-        .next-project {
-            background: #ffcc00;
-            color: black;
-            border: none;
-            padding: 10px 15px;
-            border-radius: 5px;
-            font-weight: bold;
-            cursor: pointer;
-            margin-top: 10px;
-            transition: background 0.3s ease;
-        }
-
-        .next-project:hover {
-            background: #ffd633;
-        }
 
         /* Responsive Design */
         @media (max-width: 768px) {
@@ -138,7 +121,6 @@
                 </p>
                 <a href="https://ginosettecasi.github.io/aws-compliance-dashboard/" target="_blank">View Live Dashboard</a>
                 <a href="https://github.com/ginosettecasi/aws-compliance-dashboard" target="_blank">GitHub Repo</a>
-                <button class="next-project">⬇ Next Project</button>
             </div>
 
             <!-- Example Project 2 -->
@@ -148,7 +130,6 @@
                     A tool to analyze AWS and Azure configurations for security compliance and misconfigurations.
                 </p>
                 <a href="https://github.com/ginosettecasi/cloud-security-analyzer" target="_blank">GitHub Repo</a>
-                <button class="next-project">⬇ Next Project</button>
             </div>
 
             <!-- Example Project 3 -->
@@ -165,19 +146,9 @@
         <h3>📫 Connect with Me</h3>
         <p class="contact-links">
             <a href="https://www.linkedin.com/in/gino-settecasi/" target="_blank">🔗 LinkedIn</a> |
-            <a href="mailto:gino.settecasi@gmail.com">📧 Email</a>
+            <a href="mailto:gino.settecasi@gmail.com">📧 Email</a> |
+            <a href="http://github.com/ginosettecasi" target="_blank">🐙 GitHub</a>
         </p>
     </div>
-
-    <script>
-        document.querySelectorAll('.next-project').forEach((button, index, buttons) => {
-            button.addEventListener('click', () => {
-                const projects = document.querySelectorAll('.project-card');
-                if (index < projects.length - 1) {
-                    projects[index + 1].scrollIntoView({ behavior: 'smooth' });
-                }
-            });
-        });
-    </script>
 </body>
 </html>
